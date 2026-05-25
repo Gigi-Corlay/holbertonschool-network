@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # Displays listening ports with PID and program name
 
-netstat -tlup | sed 's/0\.0\.0\.0/*/g'
+netstat -tlup
