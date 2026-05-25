@@ -2,4 +2,3 @@
 # Displays listening ports with PID and program name
 
 netstat -tlup
-
