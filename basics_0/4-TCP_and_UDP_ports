@@ -1,4 +1,8 @@
 #!/usr/bin/env bash
 # Displays listening TCP and UDP ports with PID and program name
 
+echo "Active Internet connections (only servers)"
 ss -tulnp
+
+echo "Active UNIX domain sockets (only servers)"
+ss -xlpn
