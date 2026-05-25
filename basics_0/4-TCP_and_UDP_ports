@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
+# Displays listening ports and the associated PID/program
 
 netstat -tulnp
