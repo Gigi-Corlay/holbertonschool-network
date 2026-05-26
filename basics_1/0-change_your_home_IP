@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# This script configures localhost and facebook.com IP addresses in /etc/hosts
+# Configure Ubuntu server
 
 sed -i 's/^127\.0\.0\.1[[:space:]]\+localhost/127.0.0.2 localhost/' /etc/hosts
 
