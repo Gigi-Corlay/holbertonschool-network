@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 # Configure Ubuntu server
 
-sed 's/127.0.0.1 localhost/127.0.0.2 localhost/' /etc/hosts > /tmp/hosts
-cat /tmp/hosts > /etc/hosts
+sed -i 's/127.0.0.1[[:space:]]\+localhost/127.0.0.2 localhost/' /etc/hosts
 
-echo "8.8.8.8 facebook.com" >> /etc/hosts
+grep -q "facebook.com" /etc/hosts || echo "8.8.8.8 facebook.com" >> /etc/hosts
